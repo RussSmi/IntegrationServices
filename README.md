@@ -1,2 +1,2 @@
 # IntegrationServices
-This Repo will contain the code and instructions to build out the integration services event driven demo
+This Repo will contain the code, pipelines and instructions to build out the integration services event driven demo
