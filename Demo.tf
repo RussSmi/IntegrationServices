@@ -89,6 +89,10 @@ output "cosconn" {
     value = azurerm_cosmosdb_account.demo.primary_master_key 
 }
 
+output "cosname" {
+    value = azurerm_cosmosdb_account.demo.name
+}
+
 resource "azurerm_servicebus_topic" "demo" {
   name                = "tp-is-demo-publish"
   resource_group_name = azurerm_resource_group.demo.name
@@ -98,7 +102,7 @@ resource "azurerm_servicebus_topic" "demo" {
 }
 
 resource "azurerm_servicebus_subscription" "demo-o" {
-  name                = "subs-st-demo-outlook"
+  name                = "subs-is-demo-outlook"
   resource_group_name = azurerm_resource_group.demo.name
   namespace_name      = azurerm_servicebus_namespace.demo.name
   topic_name          = azurerm_servicebus_topic.demo.name
@@ -117,7 +121,7 @@ resource "azurerm_servicebus_subscription_rule" "demo-o" {
 }
 
 resource "azurerm_servicebus_subscription" "demo-c" {
-  name                = "subs-st-demo-cosmos"
+  name                = "subs-is-demo-cosmos"
   resource_group_name = azurerm_resource_group.demo.name
   namespace_name      = azurerm_servicebus_namespace.demo.name
   topic_name          = azurerm_servicebus_topic.demo.name
