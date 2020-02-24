@@ -106,7 +106,7 @@ resource "azurerm_servicebus_subscription" "demo-o" {
 }
 
 resource "azurerm_servicebus_subscription_rule" "demo-o" {
-  name                = "tp-st-demo-publish"
+  name                = "tp-is-demo-publish"
   resource_group_name = azurerm_resource_group.demo.name
   namespace_name      = azurerm_servicebus_namespace.demo.name
   topic_name          = azurerm_servicebus_topic.demo.name
@@ -125,7 +125,7 @@ resource "azurerm_servicebus_subscription" "demo-c" {
 }
 
 resource "azurerm_servicebus_subscription_rule" "demo-c" {
-  name                = "tp-st-demo-publish"
+  name                = "tp-is-demo-publish"
   resource_group_name = azurerm_resource_group.demo.name
   namespace_name      = azurerm_servicebus_namespace.demo.name
   topic_name          = azurerm_servicebus_topic.demo.name

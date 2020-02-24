@@ -152,7 +152,7 @@
                   }
                 },
                 "method": "get",
-                "path": "/@{encodeURIComponent(encodeURIComponent('tp-st-demo-publish'))}/subscriptions/@{encodeURIComponent('subs-st-demo-cosmos')}/messages/head",
+                "path": "/@{encodeURIComponent(encodeURIComponent('tp-is-demo-publish'))}/subscriptions/@{encodeURIComponent('subs-st-demo-cosmos')}/messages/head",
                 "queries": {
                   "subscriptionType": "Main"
                 }
