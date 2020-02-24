@@ -110,7 +110,7 @@
               "kind": "Http",
               "inputs": {
                 "statusCode": 200,
-                "body": "Logic Completed"
+                "body": "Bye Coventry"
               },
               "runAfter": {
                 "For_each": [
