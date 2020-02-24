@@ -15,7 +15,7 @@
       "metadata": {
         "description": "Azure Service Bus Connection String"
       },
-      "defaultValue": "#(tfvarssbconn)#"
+      "defaultValue": "#(sbconn)#"
     },
     "documentdb_1_Connection_Name": {
       "type": "string",
