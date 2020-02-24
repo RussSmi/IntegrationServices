@@ -85,6 +85,10 @@ output "sbconn" {
   value = azurerm_servicebus_namespace.demo.default_primary_connection_string
 }
 
+output "cosconn" {
+    value = azurerm_cosmosdb_account.demo.primary_master_key 
+}
+
 resource "azurerm_servicebus_topic" "demo" {
   name                = "tp-is-demo-publish"
   resource_group_name = azurerm_resource_group.demo.name
