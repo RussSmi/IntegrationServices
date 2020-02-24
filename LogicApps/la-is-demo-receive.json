@@ -91,7 +91,7 @@
                       "ContentData": "@{base64(outputs('Compose'))}",
                       "Properties": "@outputs('Compose')"
                     },
-                    "path": "/@{encodeURIComponent(encodeURIComponent('tp-st-demo-publish'))}/messages",
+                    "path": "/@{encodeURIComponent(encodeURIComponent('tp-is-demo-publish'))}/messages",
                     "queries": {
                       "systemProperties": "None"
                     }
