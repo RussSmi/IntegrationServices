@@ -29,7 +29,7 @@ resource "azurerm_cosmosdb_account" "demo" {
   enable_automatic_failover = true
 
   consistency_policy {
-    consistency_level       = "BoundedStaleness"
+    consistency_level       = "Session"
     max_interval_in_seconds = 10
     max_staleness_prefix    = 200
   }  
@@ -53,7 +53,6 @@ resource "azurerm_cosmosdb_sql_container" "demo" {
   resource_group_name = azurerm_cosmosdb_account.demo.resource_group_name
   account_name        = azurerm_cosmosdb_account.demo.name
   database_name       = azurerm_cosmosdb_sql_database.demo.name
-  partition_key_path  = "/_partitionKey"
   throughput          = 400
 
 }
