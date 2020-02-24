@@ -30,7 +30,7 @@
       "metadata": {
         "description": "Name of the account without 'documents.azure.com' part"
       },
-      "defaultValue": "#()#"
+      "defaultValue": "#(cosname)#"
     },
     "documentdb_1_accessKey": {
       "type": "securestring",
