@@ -1,12 +1,6 @@
 terraform {
   
-  /* required_version = ">= 0.12"
-  backend "azurerm" { 
-    resource_group_name  = "rg-terraform-backend"
-    storage_account_name = "sarstfbackend666"
-    container_name       = "integrationservices"
-    key                  = "terraform-rstf-demo.tfstate" 
-  } */
+  
 }
 resource "azurerm_resource_group" "demo" {
   name                = "rg-is-demo"
@@ -14,14 +8,9 @@ resource "azurerm_resource_group" "demo" {
   tags                = {Environment = "demo"}
 }
 
-/* Create Cosmos DB & SQL container */
-resource "random_integer" "ri" {
-  min = 10000
-  max = 99999
-}
 
 resource "azurerm_cosmosdb_account" "demo" {
-  name                = "cdba-is-demo-${random_integer.ri.result}"
+  name                = "cdba-is-demo-2001"
   location            = azurerm_resource_group.demo.location
   resource_group_name = azurerm_resource_group.demo.name
   offer_type          = "Standard"
@@ -36,7 +25,7 @@ resource "azurerm_cosmosdb_account" "demo" {
   }  
 
   geo_location {
-    prefix            = "cdba-is-demo-${random_integer.ri.result}-customid"
+    prefix            = "cdba-is-demo-2001-customid"
     location          = azurerm_resource_group.demo.location
     failover_priority = 0
   }
