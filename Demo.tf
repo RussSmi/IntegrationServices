@@ -18,7 +18,6 @@ resource "azurerm_resource_group" "demo" {
   tags                = {Environment = "demo"}
 }
 
-/*
 
 resource "azurerm_cosmosdb_account" "demo" {
   name                = "cdba-is-demo-12345"
@@ -127,5 +126,5 @@ resource "azurerm_servicebus_subscription_rule" "demo-c" {
 
   sql_filter          = "1=1"
 }
-*/
+
 
