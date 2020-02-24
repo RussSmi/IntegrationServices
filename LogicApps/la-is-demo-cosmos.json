@@ -36,7 +36,8 @@
       "type": "securestring",
       "metadata": {
         "description": "Primary or Secondary Key"
-      }
+      },
+      "defaultValue": "#(cosconn)#"
     },
     "LogicAppLocation": {
       "type": "string",
