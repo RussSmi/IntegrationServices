@@ -16,7 +16,7 @@ resource "azurerm_resource_group" "demo" {
 
 
 resource "azurerm_cosmosdb_account" "demo" {
-  name                = "cdba-is-demo-2001"
+  name                = "cdba-is-demo-12345"
   location            = azurerm_resource_group.demo.location
   resource_group_name = azurerm_resource_group.demo.name
   offer_type          = "Standard"
@@ -31,7 +31,7 @@ resource "azurerm_cosmosdb_account" "demo" {
   }  
 
   geo_location {
-    prefix            = "cdba-is-demo-2001-customid"
+    prefix            = "cdba-is-demo-12345-customid"
     location          = azurerm_resource_group.demo.location
     failover_priority = 0
   }
