@@ -110,7 +110,7 @@
               "kind": "Http",
               "inputs": {
                 "statusCode": 200,
-                "body": "Bye Coventry"
+                "body": "Receive logic app completed, message published to Service Bus"
               },
               "runAfter": {
                 "For_each": [
