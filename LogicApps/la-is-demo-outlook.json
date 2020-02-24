@@ -14,7 +14,8 @@
       "type": "securestring",
       "metadata": {
         "description": "Azure Service Bus Connection String"
-      }
+      },
+      "defaultValue": "#(tfvarssbconn)#"
     },
     "office365_1_Connection_Name": {
       "type": "string",
