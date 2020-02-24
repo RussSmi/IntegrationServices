@@ -14,6 +14,7 @@ resource "azurerm_resource_group" "demo" {
   tags                = {Environment = "demo"}
 }
 
+/*
 
 resource "azurerm_cosmosdb_account" "demo" {
   name                = "cdba-is-demo-12345"
@@ -64,17 +65,6 @@ resource "azurerm_servicebus_namespace" "demo" {
     source = "terraform"
   }
 }
-
-/*
-resource "azurerm_servicebus_namespace_authorization_rule" "demo" {
-  name                = "RootManageSharedAccessKey"
-  namespace_name      = azurerm_servicebus_namespace.demo.name
-  resource_group_name = azurerm_resource_group.demo.name
-
-  listen = true
-  send   = true
-  manage = false
-}*/
 
 output "sbconn" {
   value = azurerm_servicebus_namespace.demo.default_primary_connection_string
@@ -133,4 +123,5 @@ resource "azurerm_servicebus_subscription_rule" "demo-c" {
 
   sql_filter          = "1=1"
 }
+*/
 
