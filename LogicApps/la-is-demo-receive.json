@@ -15,7 +15,7 @@
       "metadata": {
         "description": "Azure Service Bus Connection String"
       },
-      "defaultValue": "#(tfvarssbconn)#"
+      "defaultValue": "#(sbconn)#"
     },
     "LogicAppLocation": {
       "type": "string",
