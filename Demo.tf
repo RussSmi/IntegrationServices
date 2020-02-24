@@ -81,6 +81,10 @@ resource "azurerm_servicebus_namespace_authorization_rule" "demo" {
   manage = false
 }*/
 
+output "sbconn" {
+  value = azurerm_servicebus_namespace.demo.default_primary_connection_string
+}
+
 resource "azurerm_servicebus_topic" "demo" {
   name                = "tp-is-demo-publish"
   resource_group_name = azurerm_resource_group.demo.name
@@ -126,3 +130,4 @@ resource "azurerm_servicebus_subscription_rule" "demo-c" {
 
   sql_filter          = "1=1"
 }
+
