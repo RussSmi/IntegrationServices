@@ -1,0 +1,11 @@
+{
+  "basePath": "https://prod-04.uksouth.logic.azure.com/workflows/cf88e266de1547139c55d8a9c44bac8b/triggers/manual/paths/invoke",
+  "method": "POST",
+  "queries": {
+    "api-version": "2016-10-01",
+    "sig": "SqOhQne409GcJSISIpzJW3LzuNla5NW55EnV9nBL15o",
+    "sp": "/triggers/manual/run",
+    "sv": "1.0"
+  },
+  "value": "https://prod-04.uksouth.logic.azure.com:443/workflows/cf88e266de1547139c55d8a9c44bac8b/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SqOhQne409GcJSISIpzJW3LzuNla5NW55EnV9nBL15o"
+}

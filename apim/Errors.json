@@ -1,0 +1,91 @@
+{
+    "code": "ExportTemplateCompletedWithErrors",
+    "message": "Export template operation completed with errors. Some resources were not exported. Please see details for more information.",
+    "details": [
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/diagnostics/loggers",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/diagnostics/loggers' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/diagnostics/applicationinsights/loggers/ai-st-demo' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/groups/users",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/groups/users' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/groups/administrators/users/1' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/groups/users",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/groups/users' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/groups/developers/users/1' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/AccountClosedPublisher' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/BCC' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/NewApplicationNotificationMessage' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/NewIssuePublisherNotificationMessage' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/PurchasePublisherNotificationMessage' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/QuotaLimitApproachingPublisherNotificationMessage' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/notifications",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/notifications' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/notifications/RequestPublisherNotificationMessage' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/groups",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/groups' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/starter/groups/administrators' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/groups",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/groups' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/starter/groups/developers' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/groups",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/groups' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/starter/groups/guests' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/apis",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/apis' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/unlimited/apis/la-st-demo-receive' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/groups",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/groups' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/unlimited/groups/administrators' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/groups",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/groups' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/unlimited/groups/developers' cannot be exported as template."
+      },
+      {
+        "code": "SchemaNotAvailable",
+        "target": "Microsoft.ApiManagement/service/products/groups",
+        "message": "Schema for type 'Microsoft.ApiManagement/service/products/groups' is not available. Resource '/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourcegroups/rg-st-demo/providers/Microsoft.ApiManagement/service/apim-st-demo/products/unlimited/groups/guests' cannot be exported as template."
+      }
+    ]
+  }

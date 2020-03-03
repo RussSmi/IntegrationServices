@@ -54,7 +54,6 @@ resource "azurerm_cosmosdb_sql_container" "demo" {
   account_name        = azurerm_cosmosdb_account.demo.name
   database_name       = azurerm_cosmosdb_sql_database.demo.name
   throughput          = 400
-  /* partition_key_path  = "/_partitionKey" */
 
 }
 
