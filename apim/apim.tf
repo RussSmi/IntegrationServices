@@ -31,7 +31,7 @@ resource "azurerm_api_management_api" "demo" {
   path                = "receive"
   protocols           = ["https"]
 
-  service_url         = "https://prod-04.uksouth.logic.azure.com/workflows/cf88e266de1547139c55d8a9c44bac8b/triggers"
+  service_url         = var.la-is-demo-receive-url
 }
 
 resource "azurerm_api_management_backend" "demo" {
@@ -40,7 +40,7 @@ resource "azurerm_api_management_backend" "demo" {
   api_management_name = azurerm_api_management.demo.name
   protocol            = "http"
   url                 = azurerm_api_management_api.demo.service_url
-  resource_id         = "https://management.azure.com/subscriptions/ca9ae6cf-2ab2-48d0-981d-c1030fd74a64/resourceGroups/rg-is-demo/providers/Microsoft.Logic/workflows/${var.la-is-demo-receive-name}"
+  resource_id         = "https://management.azure.com/subscriptions/${var.Subscription-id}/resourceGroups/rg-is-demo/providers/Microsoft.Logic/workflows/${var.la-is-demo-receive-name}"
 }
 
 resource "azurerm_api_management_api_operation" "demo" {
@@ -58,8 +58,6 @@ resource "azurerm_api_management_api_operation" "demo" {
 
     representation {
       content_type     = "application/json"
-      /* schema_id       = "5da8757dbdac0d127808ef3a"
-      type_name       = "request-manual" */
     }
   }
 
@@ -69,8 +67,6 @@ resource "azurerm_api_management_api_operation" "demo" {
 
      representation {
       content_type     = "application/json"
-      /* schema_id       = "5da8757dbdac0d127808ef3a"
-      type_name       = "ManualPathsInvokePost200ApplicationJsonResponse" */
     }
   }
 
@@ -80,8 +76,6 @@ resource "azurerm_api_management_api_operation" "demo" {
 
      representation {
       content_type     = "application/json"
-      /* schema_id       = "5da8757dbdac0d127808ef3a"
-      type_name       = "ManualPathsInvokePost200ApplicationJsonResponse" */
     }
   }
 }
