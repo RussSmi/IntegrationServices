@@ -8,5 +8,5 @@ export SIG=$(./bashjson.sh la-is-demo-receive.json queries sig)
 echo $SIG
 export SERVICEURL=${LAURL%/manual/paths/invoke}
 echo $SERVICEURL
-#echo ##vso[task.setvariable=SERVICEURL]$LAURLTRIM
-#echo ##vso[task.setvariable=SIG]$LASIG
+echo "##vso[task.setvariable=SERVICEURL]$SERVICEURL"
+echo "##vso[task.setvariable=SIG]$SIG"
