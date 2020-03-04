@@ -40,7 +40,7 @@ resource "azurerm_api_management_backend" "demo" {
   api_management_name = azurerm_api_management.demo.name
   protocol            = "http"
   url                 = azurerm_api_management_api.demo.service_url
-  resource_id         = "https://management.azure.com/subscriptions/${var.Subscription-id}/resourceGroups/rg-is-demo/providers/Microsoft.Logic/workflows/${var.la-is-demo-receive-name}"
+  resource_id         = "https://management.azure.com/subscriptions/${var.subscription-id}/resourceGroups/rg-is-demo/providers/Microsoft.Logic/workflows/${var.la-is-demo-receive-name}"
 }
 
 resource "azurerm_api_management_api_operation" "demo" {
