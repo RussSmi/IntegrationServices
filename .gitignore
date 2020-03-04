@@ -29,3 +29,5 @@ override.tf.json
 # example: *tfplan*
 tf.plan
 apim/bashjson/la-is-demo-receive.json
+apim/bashjson/la-is-demo-receive.json
+apim/bashjson/glal.sh
