@@ -3,5 +3,5 @@ az rest --method post --uri https://management.azure.com/subscriptions/#{subscri
 LAURL=$(./bashjson.sh la-is-demo-receive.json basePath)
 LASIG=$(./bashjson.sh la-is-demo-receive.json queries sig)
 LAURLTRIM=${LAURL%/manual/paths/invoke}
-echo "##vso[task.setvariable=SERVICEURL]$LAURLTRIM"
-echo "##vso[task.setvariable=SIG]$LASIG"
+echo ##vso[task.setvariable=SERVICEURL]$LAURLTRIM
+echo ##vso[task.setvariable=SIG]$LASIG
