@@ -88,6 +88,7 @@ resource "azurerm_servicebus_topic" "demo" {
   enable_partitioning = true
 }
 
+/*
 resource "azurerm_servicebus_subscription" "demo-o" {
   name                = "subs-is-demo-outlook"
   resource_group_name = azurerm_resource_group.demo.name
@@ -126,4 +127,4 @@ resource "azurerm_servicebus_subscription_rule" "demo-c" {
   sql_filter          = "1=1"
 }
 
-
+*/
