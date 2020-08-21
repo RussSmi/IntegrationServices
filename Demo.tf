@@ -1,19 +1,11 @@
-terraform {
-   /* required_version = ">= 0.12"
-  backend "azurerm" { 
-    resource_group_name  = "rg-terraform-backend"
-    storage_account_name = "sarstfbackend666"
-    container_name       = "integrationservices"
-    key                  = "terraform-rstf-demo.tfstate" 
-  } */  
+provider "azurerm" {
+  version  = "~>2.14.0"
+  features {}
 }
 
-provider "azurerm" {
-  version = "=1.44.0"
-}
 
 resource "azurerm_resource_group" "demo" {
-  name                = "rg-is-demo"
+  name                = "rg-is-demo-${var.environment}"
   location            = "UK South"
   tags                = {Environment = "demo"}
 }
