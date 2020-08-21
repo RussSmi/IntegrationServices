@@ -13,7 +13,7 @@ output "resource_group_name" {
 }
 
 resource "azurerm_api_management" "demo" {
-  name                = "apim-is-demo"
+  name                = "apim-is-demo-${var.environment}"
   location            = data.azurerm_resource_group.demo.location
   resource_group_name = data.azurerm_resource_group.demo.name
   publisher_name      = "ISDemo"
@@ -41,7 +41,7 @@ resource "azurerm_api_management_backend" "demo" {
   api_management_name = azurerm_api_management.demo.name
   protocol            = "http"
   url                 = azurerm_api_management_api.demo.service_url
-  resource_id         = "https://management.azure.com/subscriptions/${var.subscription-id}/resourceGroups/rg-is-demo/providers/Microsoft.Logic/workflows/${var.la-is-demo-receive-name}"
+  resource_id         = "https://management.azure.com/subscriptions/${var.subscription-id}/resourceGroups/rg-is-demo-${var.environment}/providers/Microsoft.Logic/workflows/${var.la-is-demo-receive-name}"
 }
 
 resource "azurerm_api_management_api_operation" "demo" {

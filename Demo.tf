@@ -3,13 +3,11 @@ provider "azurerm" {
   features {}
 }
 
-
 resource "azurerm_resource_group" "demo" {
   name                = "rg-is-demo-${var.environment}"
   location            = "UK South"
   tags                = {Environment = "demo"}
 }
-
 
 resource "azurerm_cosmosdb_account" "demo" {
   name                = "cdba-is-demo-12345"
