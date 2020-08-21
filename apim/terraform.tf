@@ -17,3 +17,6 @@ variable "subscription-id" {
   description       = "subscription-id"
   type              = string
 }
+
+variable "environment" {
+}

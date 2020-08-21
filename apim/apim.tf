@@ -1,10 +1,11 @@
 provider "azurerm" {
-  version = "=1.44.0"
+  version  = "~>2.14.0"
+  features {}
 }
 
 // Load resource group
 data "azurerm_resource_group" "demo" {
-  name                = "rg-is-demo"
+  name                = "rg-is-demo-${var.environment}"
 }
 
 output "resource_group_name" {
